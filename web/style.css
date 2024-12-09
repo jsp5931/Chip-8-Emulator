@@ -1,0 +1,153 @@
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+body {
+    font-family: 'Public Pixel', sans-serif;
+    background-color: grey;
+}
+
+.emscripten {
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+textarea.emscripten {
+    font-family: monospace;
+    width: 80%;
+}
+
+div.emscripten {
+    text-align: center;
+}
+
+/* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+canvas.emscripten {
+    border: 0px none;
+    background-color: black;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.instructionSection {
+    color: black;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.instructions {
+    margin-top: 2vh;
+}
+
+.sidebar {
+    height: 100vh; /* Full viewport height */
+    width: 250px; /* Sidebar width */
+    position: fixed; /* Sticks to the left of the page */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Dark background */
+    color: white;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    padding-bottom: 10px;
+}
+
+/* Sidebar links */
+.member {
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+    /* Hover effect for links */
+    .member:hover {
+        background-color: white;
+        cursor: pointer;
+        color:black;
+    }
+
+#active {
+    background-color: white;
+    color: black;
+}
+
+#reset {
+    position: fixed;
+    right: 100px;   
+    top: 40vh;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: solid;
+    font-size: 20px;
+    font-family: 'Public Pixel', sans-serif;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+    #reset:hover {
+        color: black;
+        background-color: white;
+    }
+
+.spinner {
+    height: 50px;
+    width: 50px;
+    margin: 0px auto;
+    -webkit-animation: rotation .8s linear infinite;
+    -moz-animation: rotation .8s linear infinite;
+    -o-animation: rotation .8s linear infinite;
+    animation: rotation 0.8s linear infinite;
+    border-left: 10px solid rgb(0,150,240);
+    border-right: 10px solid rgb(0,150,240);
+    border-bottom: 10px solid rgb(0,150,240);
+    border-top: 10px solid rgb(100,0,200);
+    border-radius: 100%;
+    background-color: rgb(200,100,250);
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotation {
+    from {
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

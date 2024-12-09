@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Emscripten-Generated Code</title>
+     <link href="style.css" rel="stylesheet">
+    <script src="main.js" async></script>
+</head>
+<body>
+    <figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
+    <div class="emscripten" id="status">Downloading...</div>
+    <div class="emscripten">
+        <progress value="0" max="100" id="progress" hidden=1></progress>
+    </div>
+    <div class="emscripten_border">
+        <div class="title">
+            <h1>CHIP8 EMULATOR</h1>
+        </div>
+        <div class="sidebar">
+            <div class="member freq3">Tetris</div>
+            <div class="member freq5">Brick Break</div>
+            <div class="member freq13">Outlaw</div>
+            <div class="member freq25">Space Jam</div>
+            <div class="member freq5">Blitz</div>
+            <div class="member freq1">Merlin</div>
+            <div class="member freq6">Pong</div>
+            <div class="member freq2">Tapeworm</div>
+            <div class="member freq6">UFO</div>
+            <div class="member freq5">Soccer</div>
+        </div>
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
+    </div>
+    <div class="instructionSection">
+        <h1>Instructions</h1>
+        <p class="instructions">SELECT A GAME FROM THE SIDEBAR TO BEGIN!<br> CLICK THE RESET BUTTON IF YOU WANT TO START AGAIN! <br>ENJOY!</p>
+    </div>
+    <button id="reset">Reset</button>
+    {{{ SCRIPT }}}
+</body>
+</html>
