@@ -12,3 +12,6 @@ cd build
 emmake make
 
 After this you can run a local server in the build folder to use the emulator
+
+*********************************************************************************
+You can visit try out this emulator here: https://chip-8-emulator-eight.vercel.app/
